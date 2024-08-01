@@ -3153,6 +3153,8 @@
         ? T(e, "NextPartNumberMarker")
         : void 0;
     }), (m.prototype.makePartsfromPartsOnS3 = function() {
+        console.log(" ")
+        console.log("t.eTag:" + t.eTag)
       -1 !== c.indexOf(this.status) &&
         (
           this.nameChanged(this.name),
@@ -3683,7 +3685,7 @@
     }), (U.prototype = Object.create(
       _.prototype
     )), (U.prototype.constructor = U), (U.prototype.awsKey = void 0), (U.prototype.success = function() {
-      (this.currentXhr.getResponseHeader("Etag") === this.fileUpload.eTag ||
+      (this.currentXhr.getResponseHeader("ETag") === this.fileUpload.eTag ||
         this.rejectedSuccess(
           "uploadId ",
           this.fileUpload.id,
